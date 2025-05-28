@@ -11,16 +11,16 @@ export default function Navbar({ activePage }: NavbarProps) {
                 Home
             </Link>
             <Link href={"/songs"} className="flex-1 flex justify-center p-4">
-                Top Songs
+                Songs
             </Link>
             <Link href={"/artists"} className="flex-1 flex justify-center p-4">
-                Top Artists
+                Artists
             </Link>
             {/* <Link href={"/messages"} className="flex-1 flex justify-center p-4">
                 <Image src={dmImg} width={25} height={25} alt="Messages" />
             </Link> */}
             <Link href={"/analysis"} className="flex-1 flex justify-center p-4">
-                Get Analysis
+                Analysis
             </Link>
         </nav>
     );

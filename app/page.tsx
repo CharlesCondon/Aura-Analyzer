@@ -12,6 +12,7 @@ export default function Root() {
         if (code) {
             const fetchToken = async () => {
                 const accessToken = await getAccessToken(clientId, code);
+                console.log("access token: " + accessToken);
                 localStorage.setItem("token", accessToken);
                 router.push("/home");
                 return accessToken;
@@ -93,6 +94,7 @@ export default function Root() {
         });
 
         const { access_token } = await result.json();
+        console.log("access token: " + access_token);
         return access_token;
     }
 
